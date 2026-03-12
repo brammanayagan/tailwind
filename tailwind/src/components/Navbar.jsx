@@ -1,0 +1,28 @@
+import { Link } from "react-router-dom";
+
+const Navbar = () => {
+  return (
+    <nav className="bg-white shadow">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="text-xl font-bold text-blue-600">Logo</div>
+
+        <ul className="flex gap-8 text-gray-700 font-medium">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/problem1">Problem 1</Link>
+          </li>
+          <li>
+            <Link to="/problem2">Problem 2</Link>
+          </li>
+          <li>
+            <Link to="/problem3">Problem 3</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
